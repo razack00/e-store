@@ -5,17 +5,29 @@
   margin: 0px;
   padding: 0px;
   font-family: 'Caveat', cursive;
+  text-decoration: none;
+  list-style: none;
 }
+
+:root {
+    /* colors */
+    --light-blue: #2e1c97b3;
+    --light-blue-hover: #2e1c97;
+    --light-grey: rgb(236, 237, 238);
+    --white: #fff;
+  
+    --shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow)
 }
 nav .logo{
-    color: #fff;
+    color: var(--white);
     background-color: rgba(255, 34, 255, 0.701);
     text-decoration: none;
     width: 1rem;
@@ -55,11 +67,11 @@ nav div{
 
 .dropdown{
     position: absolute;
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 0.4rem;
     top: 2.2rem;
     padding: 1rem;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow);
     display: none;
 }
 
@@ -74,8 +86,8 @@ nav button{
     border: none;
     outline: none;
     border-radius: 0.4rem;
-    background-color: #2e1c97b3;
-    color: white;
+    background-color: var(--light-blue);
+    color: var(--white);
     font-size: 1rem;
     font-weight: 600;
     white-space: nowrap;
@@ -85,7 +97,7 @@ nav button{
 nav button:hover{
     transform: scale(1.06);
     opacity: 1;
-    background-color: #2e1c97;
+    background-color: var(--light-blue);
 }
 
 .user{
