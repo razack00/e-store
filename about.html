@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar">
         <img class="logo" src="./assets/logoS.png" alt="logo">
-        <ul>
+        <ul class="desktop-nav">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./store.html">Store</a></li>
             <li><a href="./about.html">About</a></li>
@@ -26,6 +26,21 @@
                 <div class="dropdown"><button class="loginlogout">Log out</button></div>
             </div>
             <a href="signup.html" class="btn register">Register</a>
+            <div class="mobile-nav-btn menu-btn">
+                <div class="item1"></div>
+                <div class="item2"></div>
+                <div class="item3"></div>
+            </div>
+        </div>
+    </nav>
+    <nav class="mobile-nav">
+        <div class="menu">
+            <ul>
+                <li data-page="hero-section"><a href="index.html">Home</a></li>
+                <li data-page="about-section"><a href="store.html">Store</a></li>
+                <li data-page="project-section"><a href="about.html">About</a></li>
+                <li data-page="contact-section"><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
     </nav>
     <div class="showcase">
