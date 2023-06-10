@@ -43,6 +43,11 @@ document.addEventListener("DOMContentLoaded", () => {
       menu.style.display = menu.style.display === "flex" ? "none" : "flex";
   };
 
+  menu.onblur = () => {
+    menu.style.display = "none"
+    console.log('outclick')
+  }
+
   //hide the menu on bigger screens
   window.onresize = () => {
       if (window.innerWidth > 548) {
