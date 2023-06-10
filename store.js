@@ -176,7 +176,6 @@ const products = [
   },
 ];
 
-// <img class="product-image" src="https://via.placeholder.com/300" alt="product">
 
 const productsContainer = document.querySelector(".products");
 const searchInput = document.querySelector(".search-bar")
@@ -229,4 +228,10 @@ document.addEventListener("DOMContentLoaded", () => {
       return
     }
   }
+
+
+  const filterToggle = document.querySelector(".filter");
+  filterToggle.onclick = () => {
+      categoriesContainer.style.display = categoriesContainer.style.display === "flex" ? "none" : "flex";
+  };
 });
