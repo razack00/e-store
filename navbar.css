@@ -150,7 +150,7 @@ nav button:hover{
     /* align-items: center; */
     gap: 3rem;
     width: 100%;
-    z-index: 434343;
+    z-index: 43433;
     padding-block: 2rem
 }
 
@@ -175,7 +175,47 @@ nav button:hover{
     color: var(--white);
 }
 
+
+/* footer section design */
+
+footer {
+    background-color:var(--dark-grey);
+    padding-block: 3rem;
+    color: var(--white);
+  }
+  .footer-nav-section {
+    display: flex;
+    padding: 0rem 2rem 3rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .footer-nav-section div {
+    min-width: 250px;
+    margin-inline: 5px
+  }
+  
+  .footer-nav-title {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .footer-nav li a {
+    color: var(--white);
+  }
+  
+  .footer-nav li a:hover {
+    color: rgb(214, 214, 218)
+  }
+  
+  .copyright-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 548px){
+    .navbar {
+        padding-inline: .4rem
+    }
     .desktop-nav {
         display: none;
     }
