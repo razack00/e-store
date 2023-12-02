@@ -20,10 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        console.table({
-            EmailAddress: email,
-            Password: password,
-        })
         console.log(user);
         // validateUser(user, email, password);
 
@@ -48,4 +44,4 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("Invalid login details");
             return;
         }
-    }*/
+}*/
