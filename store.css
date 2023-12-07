@@ -96,13 +96,17 @@ header form{
     opacity: 1;
 }
 
+.store-container{
+    display: flex;
+}
+
 .products{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     flex-flow: row wrap;
-    width: 100%;
-    padding: 1rem;
+    width: 70%;
+    padding: 1rem 1rem 1rem 3rem;
     gap: 2rem;
 }
 
@@ -115,11 +119,12 @@ header form{
     flex-flow: column nowrap;
     width: fit-content;
     padding: .3rem;
+    width: 30%;
 }
 
 .product img{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 220px;
     object-fit: cover;
     border-radius: inherit;
 }
@@ -128,14 +133,14 @@ header form{
     font-family: var(--font-caveat)!important;
 }
 
-.buy-btn{
-    padding: .5rem 1rem;
+.AddToCartbtn{
+    padding: .3rem .7rem;
     border: none;
     outline: none;
     border-radius: 0.4rem;
     background-color: var(--light-blue);
     color: white;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 600;
     cursor: pointer;
     margin-top: 1rem;
@@ -145,11 +150,61 @@ header form{
     background-color: var(--light-blue-hover);
 }
 
+.cart {
+    width: 30%;
+    padding: .5rem;
+    font-family: var(--font-montserrat);
+    font-size: .82rem;
+    font-weight: 500;
+}
+
+.cart-header-top {
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    gap: .3rem;
+}
+
+.cart-header-columns {
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.cart-item-prop {/* General each item  properties (content */
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-item-image-card {
+    background-color: var(--light-grey);
+}
+
+.cart-item-image-card > img {
+    width: 80px;
+}
+
+.cart-item-units {
+    gap: .4rem;
+}
+
+.cart-item-unit-price {
+}
+
 .footer-nav-title {
     padding-bottom: 1rem;
   }
 
-  @media (max-width: 548px){
+@media (max-width: 548px){
     .cats {
         gap: .3rem;
         flex-wrap: wrap;
