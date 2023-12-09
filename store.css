@@ -202,7 +202,30 @@ header form{
 
 .footer-nav-title {
     padding-bottom: 1rem;
-  }
+}
+
+.cart-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: .8rem; */
+    background-color: var(--light-blue);
+}
+
+.cart-footer .subtotal {
+    text-align: center;
+    background-color: var(--grey);
+    width: 100%;
+    padding: .5rem;
+    color: var(--white);
+}
+
+.cart-footer .checkout-btn{
+    padding: .7rem;
+    color: var(--white);
+    width: 100%;
+    text-align: center;
+}
 
 @media (max-width: 548px){
     .cats {
