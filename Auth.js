@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     register.style.display = 'block'
     storeTextHTMLTag.onclick = () => {
       location.href = "signin.html";
-    };
+  };
   } else {
       const logoutBtn = document.querySelector(".loginlogout");
       register.style.display = 'none'
@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
           //remove the user object from local storage
           localStorage.removeItem("isLoggedIn");
             //reload the page
-            location.reload();
+          location.reload();
       }
       storeTextHTMLTag.onclick = () => {
-        //   dropdown.style.display === "flex"?dropdown.style.display = "none" : dropdown.style.display = "flex";
+        //   dropdown.style.display === dropdown.style.display = "none" : dropdown.style.display = "flex";
           
         //   if (dropdown.style.display === "flex") {
         //         dropdown.style.display = "none";

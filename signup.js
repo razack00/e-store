@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cpass.style.border = "2px solid green";
       confirmMessage.innerHTML = "";
     }
-  };
+  }; 
 
   // when the form is submitted
   form.onsubmit = (e) => {
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (
       fname === "" ||
-      lname === "" ||
+      lname === "" || 
       email === "" ||
       password === "" ||
       cpassword === ""

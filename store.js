@@ -188,7 +188,7 @@ const displayProducts = (filteredProducts) => {
   <h3 class="product-name">${product.name}</h3>
   <p class="product-cat">${product.category}</p>
   <p class="product-price"><span class="price-value">${product.price}</span><span class="unit">FCFA</span></p>
-  <button class="buy-btn">Add to Cart</button>
+  <button class="AddToCartbtn">Add to Cart</button>
   </div>`
   ).join("");
 }
