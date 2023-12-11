@@ -58,45 +58,81 @@
         <div class="products">
             <!-- Rendering products here -->
         </div>
-        <div class="cart">
-            <!-- Rendring cart items here -->
-            <div class="cart-items-container">
-                <div class="cart-header">
-                    <div class="cart-header-top">
-                        <svg class="filter" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M3.9 54.9C10.5 40.9 24.5 32 40 32H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6V320.9L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z"/></svg>
-                        <div class="box">Cart</div>
-                        <div class="cart-item-count">0</div>
+        <div class="sidebar">
+            <div class="cart">
+                <!-- Rendring cart items here -->
+                <div class="cart-items-container">
+                    <div class="cart-header">
+                        <div class="cart-header-top">
+                            <svg class="filter" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M3.9 54.9C10.5 40.9 24.5 32 40 32H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6V320.9L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z"/></svg>
+                            <div class="box">Cart</div>
+                            <div class="cart-item-count">0</div>
+                        </div>
+                        <div class="cart-header-columns">
+                            <div class="cart-header-columns1">Item</div>
+                            <div class="cart-header-columns2">Unit Price</div>
+                            <div class="cart-header-columns3">Unites</div>
+                        </div>
                     </div>
-                    <div class="cart-header-columns">
-                        <div class="cart-header-columns1">Item</div>
-                        <div class="cart-header-columns2">Unit Price</div>
-                        <div class="cart-header-columns3">Unites</div>
-                    </div>
+                    <div class="cart-items">
+                        <div class="cart-item">
+                            <div class="cart-item-image-card cart-item-prop">
+                                <img src="./assets/logoS.png" alt="">
+                                <h4>Shoes</h4>
+                            </div>
+                            <div class="cart-item-unit-price cart-item-prop">
+                                <small>$</small>33.99
+                            </div>
+                            <div class="cart-item-units cart-item-prop">
+                                <div class="cart-btn minus">-</div>
+                                <div class="number">1</div>
+                                <div class="cart-btn plus">+</div>
+                            </div>
+                        </div>
+                    </div>    
                 </div>
-                <div class="cart-items">
-                    <div class="cart-item">
-                        <div class="cart-item-image-card cart-item-prop">
-                            <img src="./assets/logoS.png" alt="">
-                            <h4>Shoes</h4>
-                        </div>
-                        <div class="cart-item-unit-price cart-item-prop">
-                            <small>$</small>33.99
-                        </div>
-                        <div class="cart-item-units cart-item-prop">
-                            <div class="cart-btn minus">-</div>
-                            <div class="number">1</div>
-                            <div class="cart-btn plus">+</div>
-                        </div>
+                <div class="cart-footer">
+                    <div class="subtotal">
+                        Subtotal (0 items): $0
                     </div>
-                </div>    
+                    <a href="#" class="checkout-btn">
+                        Proceed to Checkout
+                    </a>
+                </div>
             </div>
-            <div class="cart-footer">
-                <div class="subtotal">
-                    Subtotal (0 items): $0
+            <div class="trending-section">
+                <h3 class="title">Trending Categories</h3>
+                <div class="cards">
+                    <div class="card">
+                      <img src="https://images.unsplash.com/photo-1591485423007-765bde4139ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
+                      <h2 class="card-title">Seal</h2>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1591485423007-765bde4139ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
+                        <h2 class="card-title">Seal</h2>
+                      </div>
+                      <div class="card">
+                        <img src="https://images.unsplash.com/photo-1591485423007-765bde4139ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
+                        <h2 class="card-title">Seal</h2>
+                      </div><div class="card">
+                        <img src="https://images.unsplash.com/photo-1591485423007-765bde4139ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
+                        <h2 class="card-title">Seal</h2>
+                      </div>                    
                 </div>
-                <a href="#" class="checkout-btn">
-                    Proceed to Checkout
-                </a>
+                <article class="information [ trending-showcase ]">
+                    <h2 class="title">The only tool you need to schedule your day</h2>
+                    <p class="info">Always keep updated with this simple tool on the go, when and where ever you need.</p>
+                    <dl class="details">
+                        <div>
+                            <dt>Satisfaction</dt>
+                            <dd>100%</dd>
+                        </div>
+                        <div>
+                            <dt>Customers</dt>
+                            <dd>4.5K</dd>
+                        </div>
+                    </dl>
+                </article>
             </div>
         </div>
     </main>
