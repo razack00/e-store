@@ -11,13 +11,14 @@
     --grey: #232f3e;
     --darkgreen: #00453e;
     --green-hover: #1c6159;
-    --lightgreen: #a5e3b9;
+    --btn-hover: #a3ecba;
+    --lightgreen: #98ddae;
+    --dark-grey: #2D2D2D;
 
   
     --shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
     --font-montserrat: 'Montserrat', sans-serif;
     --font-caveat: 'Caveat', cursive;
-    --black: #000;
 
 }
 
@@ -82,14 +83,14 @@
 .navbar a{
     color: var(--black);
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .loginlogout{
     border: none;
     background-color: transparent;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     white-space: nowrap;
     cursor: pointer;
 }
@@ -104,7 +105,7 @@
 }
 
 .btn{
-    background-color: var(--light-blue);
+    background-color: var(--lightgreen);
     border-radius: 100vh;
     box-shadow: 0 0px 9px 0 rgba(255,83,48,.35);
     color: var(--white);
@@ -113,7 +114,11 @@
     font-size: 1rem;
     font-family: var(--font-montserrat);
     border: none;
-  }
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+}
 
   /* mobile nav */
 .mobile-nav{
@@ -183,7 +188,7 @@
 /* footer section design */
 
 footer {
-    background-color:var(--dark-grey);
+    background-color:var(--grey);
     padding-block: 3rem;
     color: var(--white);
   }
