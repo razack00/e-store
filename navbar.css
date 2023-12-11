@@ -5,9 +5,13 @@
     /* colors */
     --light-blue: #FF4D30;
     --light-blue-hover: #FA4226;
-    --light-grey: rgb(236, 237, 238);
+    --light-grey: #f4f4f4;
     --white: #fff;
-    --dark-grey: #2D2D2D;
+    --black: #000;
+    --grey: #232f3e;
+    --darkgreen: #00453e;
+    --green-hover: #1c6159;
+    --lightgreen: #a5e3b9;
 
   
     --shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
@@ -27,20 +31,20 @@
   outline: none;
 }
 
-
-nav{
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-inline: 2rem;
+    background-color: var(--light-grey);
     box-shadow: var(--shadow)
 }
-nav .logo{
-    width: 80px;
+.navbar .logo{
+    width: 70px;
     height: fit-content;
 }
 
-nav ul{
+.navbar ul{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -48,7 +52,7 @@ nav ul{
 }
 
 
-nav .useracc{
+.navbar .useracc{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +79,7 @@ nav .useracc{
     display: none;
 }
 
-nav a{
+.navbar a{
     color: var(--black);
     font-size: 1.1rem;
     font-weight: 600;
@@ -90,7 +94,7 @@ nav a{
     cursor: pointer;
 }
 
-nav button:hover{
+.navbar button:hover{
     transform: scale(1.06);
     opacity: 1;
 }
@@ -206,6 +210,49 @@ footer {
   .footer-nav li a:hover {
     color: rgb(214, 214, 218)
   }
+
+  footer .lang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-grey);
+    text-align: right;
+    padding: .3rem 1.2rem;
+    width: 50%;
+    border-radius: 6rem .6rem .6rem 0rem;
+}
+
+footer .lang a {
+    font-size: .8rem;
+    color: var(--dark-grey);
+    display: flex;
+    gap: .4rem;
+    margin-inline: 1rem;
+}
+
+footer .lang a svg {
+    fill: var(--black);
+}
+
+.nav-info {
+    display: flex;
+    background-color: var(--white);
+    width: 98%;
+    margin: auto;
+    border-radius: .2rem;
+}
+.nav-info-empty {
+    width: 50%;
+}
+
+footer select {
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    padding: .1rem .9rem;
+    color: var(--black);
+    font-size: .7rem;
+}
   
   .copyright-section {
     width: 100%;
