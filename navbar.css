@@ -82,7 +82,7 @@
 
 .navbar a{
     color: var(--black);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -220,34 +220,30 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--light-grey);
-    text-align: right;
+    background-color: transparent;
     padding: .3rem 1.2rem;
     width: 50%;
-    border-radius: 6rem .6rem .6rem 0rem;
 }
 
 footer .lang a {
     font-size: .8rem;
-    color: var(--dark-grey);
+    color: var(--white);
     display: flex;
     gap: .4rem;
     margin-inline: 1rem;
 }
 
 footer .lang a svg {
-    fill: var(--black);
+    fill: var(--white);
 }
 
 .nav-info {
     display: flex;
-    background-color: var(--white);
+    background-color:transparent;
     width: 98%;
-    margin: auto;
+    margin-bottom: 2rem;
     border-radius: .2rem;
-}
-.nav-info-empty {
-    width: 50%;
+    justify-content: center;
 }
 
 footer select {
